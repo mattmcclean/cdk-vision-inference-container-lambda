@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { CdkVisionInferenceContainerLambdaStack } from '../lib/cdk-vision-inference-container-lambda-stack';
+import { VisionInferenceStack } from '../lib/vision-container-lambda-stack';
 
 const app = new cdk.App();
-new CdkVisionInferenceContainerLambdaStack(app, 'CdkVisionInferenceContainerLambdaStack');
+new VisionInferenceStack(app, 'MyVisionInferenceStack');
